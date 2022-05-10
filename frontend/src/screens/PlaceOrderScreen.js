@@ -7,7 +7,6 @@ import Button from 'react-bootstrap/Button';
 import ListGroup from 'react-bootstrap/ListGroup';
 import { Store } from '../Store';
 import CheckoutSteps from '../components/CheckoutSteps';
-import axios from 'axios';
 
 
 
