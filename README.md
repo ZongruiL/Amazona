@@ -1,6 +1,6 @@
 # Ecommerce
 
-# Demo
+## Demo Image
 ![amazona](/frontend/public/Demo.png)
 
 ## Run Locally
