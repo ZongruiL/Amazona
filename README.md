@@ -1,5 +1,8 @@
 # Ecommerce
 
+# Demo
+![amazona](amazona/frontend/public/Demo.png)
+
 ## Run Locally
 
 ### 1. Clone repo
