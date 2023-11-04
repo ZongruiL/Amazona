@@ -16,6 +16,7 @@ import SignupScreen from './screens/SignupScreen';
 import PaymentMethodScreen from './screens/PaymentMethodScreen';
 import PlaceOrderScreen from './screens/PlaceOrderScreen';
 function App() {
+  
   const { state, dispatch: ctxDispatch } = useContext(Store);
   const { cart, userInfo } = state;
 
@@ -33,7 +34,7 @@ function App() {
       <Navbar bg="dark" variant="dark">
       <Container>
           <LinkContainer to="/">
-            <Navbar.Brand>Amazona</Navbar.Brand>
+            <Navbar.Brand>Ecommerce</Navbar.Brand>
           </LinkContainer>
           <Nav className="me-auto">
             <Link to="/cart" className='nav-link'>
@@ -46,13 +47,8 @@ function App() {
             </Link>
             {userInfo ? (
                   <NavDropdown title={userInfo.name} id="basic-nav-dropdown">
-                    <LinkContainer to="/profile">
-                      <NavDropdown.Item>User Profile</NavDropdown.Item>
-                    </LinkContainer>
-                    <LinkContainer to="/orderhistory">
-                      <NavDropdown.Item>Order History</NavDropdown.Item>
-                    </LinkContainer>
-                    <NavDropdown.Divider />
+                    
+                    
                     <Link
                       className="dropdown-item"
                       to="#signout"
@@ -91,6 +87,17 @@ function App() {
     </div>
     </BrowserRouter>
   );
+
+
+
+/*
+  <LinkContainer to="/profile">
+          <NavDropdown.Item>User Profile</NavDropdown.Item>
+                    </LinkContainer>
+                    <LinkContainer to="/orderhistory">
+                      <NavDropdown.Item>Order History</NavDropdown.Item>
+                    </LinkContainer>
+                    */
 }
 
 export default App;
